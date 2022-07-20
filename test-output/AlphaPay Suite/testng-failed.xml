@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AlphaPay Suite]">
+  <listeners>
+    <listener class-name="alphaUtilityClasses.ListenersTestNG"/>
+  </listeners>
+  <test thread-count="5" name="Signup Test(failed)">
+    <classes>
+      <class name="alphaTests.SignUpTest">
+        <methods>
+          <include name="Setup"/>
+          <include name="navigateToRegisterPage"/>
+          <include name="Teardown"/>
+          <include name="ValidateDuplicateUsercreation"/>
+        </methods>
+      </class> <!-- alphaTests.SignUpTest -->
+    </classes>
+  </test> <!-- Signup Test(failed) -->
+  <test thread-count="5" name="Update Profile Test(failed)">
+    <classes>
+      <class name="alphaTests.UpdateProfileTest">
+        <methods>
+          <include name="ValidateinvalidUpdateProfile2"/>
+          <include name="navigateToprofilepage"/>
+          <include name="Setup"/>
+          <include name="ValidateinvalidUpdateProfile1"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- alphaTests.UpdateProfileTest -->
+    </classes>
+  </test> <!-- Update Profile Test(failed) -->
+  <test thread-count="5" name="Change Password Test(failed)">
+    <classes>
+      <class name="alphaTests.ChangePasswordTest">
+        <methods>
+          <include name="CheckforThePasswordTextFieldThatHasAmissingLowercase"/>
+          <include name="CheckforThePasswordTextFieldThatHasAmissingUppercase"/>
+          <include name="navigateTosecuritypage"/>
+          <include name="ValidateChangePasswordUsingOldPasswordinNewPasswordField"/>
+          <include name="Setup"/>
+          <include name="ValidateChangePasswordUsingValidOldAndNewPasssword"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- alphaTests.ChangePasswordTest -->
+    </classes>
+  </test> <!-- Change Password Test(failed) -->
+</suite> <!-- Failed suite [AlphaPay Suite] -->

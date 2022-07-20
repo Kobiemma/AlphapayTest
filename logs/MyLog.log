@@ -1,0 +1,27 @@
+[INFO ] 2022-07-20 16:04:01.378 [main] Log - Starting up browser and opening the web Url
+[INFO ] 2022-07-20 16:04:11.280 [main] Log - Test Conditions -----------Check the Email text field that has an Email address without @ symbol. 
+[INFO ] 2022-07-20 16:04:15.475 [main] Log - Test Conditions -----------Check the Email text field that has a missing dot
+[INFO ] 2022-07-20 16:04:19.072 [main] Log - Test Conditions -----------Check the Email text field that has a missing domain 
+[INFO ] 2022-07-20 16:04:22.438 [main] Log - Test Conditions -----------Check the Email text field that has a missing username 
+[INFO ] 2022-07-20 16:04:25.637 [main] Log - Test Conditions -----------Check the Email text field that has a encoded html 
+[INFO ] 2022-07-20 16:04:29.315 [main] Log - Test Conditions -----------Check the Email text field that has a 2 @
+[INFO ] 2022-07-20 16:04:32.557 [main] Log - Test Conditions -----------Check the Email text field that has a missing dot, @ and domain
+[INFO ] 2022-07-20 16:04:35.752 [main] Log - Test Conditions -----------Check the Phone number text field that has alphanumeric 
+[INFO ] 2022-07-20 16:04:38.923 [main] Log - Test Conditions -----------Check the Phone number text field that has special characters
+[INFO ] 2022-07-20 16:04:42.032 [main] Log - Test Conditions -----------Check the Phone number text field that is less than 8digits.
+[INFO ] 2022-07-20 16:04:45.176 [main] Log - Test Conditions -----------Check the Password text field that has a missing uppercase
+[INFO ] 2022-07-20 16:04:48.315 [main] Log - Test Conditions -----------Check the Password text field that has a missing lowercase
+[INFO ] 2022-07-20 16:04:51.483 [main] Log - Test Conditions -----------Check the Password text field that has a missing number
+[INFO ] 2022-07-20 16:04:54.524 [main] Log - Test Conditions -----------Check the Password text field that has a missing special character
+[INFO ] 2022-07-20 16:04:57.502 [main] Log - Test Conditions -----------Check the Password text field that is less than 9 characters
+[INFO ] 2022-07-20 16:05:00.503 [main] Log - Test Conditions -----------Check for password and confirm password mismatch
+[INFO ] 2022-07-20 16:05:03.821 [main] Log - Test Conditions -----------Check user should Register by filling all the required fields with valid inputs
+[INFO ] 2022-07-20 16:05:06.822 [main] Log - Test Conditions -----------Check the required fields by not filling any data
+[ERROR] 2022-07-20 16:05:06.852 [main] Log - TestData Class | Method getCellData | Exception descCannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because "alphaUtilityClasses.TestData.Cell" is null
+[ERROR] 2022-07-20 16:05:06.870 [main] Log - TestData Class | Method getCellData | Exception descCannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because "alphaUtilityClasses.TestData.Cell" is null
+[ERROR] 2022-07-20 16:05:06.891 [main] Log - TestData Class | Method getCellData | Exception descCannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because "alphaUtilityClasses.TestData.Cell" is null
+[ERROR] 2022-07-20 16:05:06.911 [main] Log - TestData Class | Method getCellData | Exception descCannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because "alphaUtilityClasses.TestData.Cell" is null
+[ERROR] 2022-07-20 16:05:06.933 [main] Log - TestData Class | Method getCellData | Exception descCannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because "alphaUtilityClasses.TestData.Cell" is null
+[ERROR] 2022-07-20 16:05:06.952 [main] Log - TestData Class | Method getCellData | Exception descCannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because "alphaUtilityClasses.TestData.Cell" is null
+[ERROR] 2022-07-20 16:05:07.018 [main] Log - java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+[INFO ] 2022-07-20 16:05:07.047 [main] Log - Test Conditions -----------Check user should Register by filling all the required fields with valid inputs
