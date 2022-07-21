@@ -1,14 +1,17 @@
 package alphaUtilityClasses;
 
-public class TestConstant {
+
+
+public class TestConstant{
 	
-	//public static final String projectPath = System.getProperty("user.dir");
 	
 	//Url
 	 public static final String baseURL = "http://alphapay.netlify.app";
-     
-	 //Paths
-	 public static final String Path_TestData = "C:\\Users\\delphine.muoka\\eclipse-workspace\\AlphapayMavenProject\\src\\test\\resources\\alphaTestData.xlsx";
+	 
+	 
+	//Paths
+	 public static String projectPath = System.getProperty("user.dir");
+	 public static final String Path_TestData = projectPath+"/src/test/resources/alphaTestData.xlsx";
      
    
      

@@ -32,12 +32,11 @@ public class BaseClass {
 	
 	public SignupPage signuppage;
 	public LoginPage loginpage;
-
-	// Run before every method
+	 
 	@BeforeTest
 	public void Setup() {
 		
-String projectPath = System.getProperty("user.dir");
+    String projectPath = System.getProperty("user.dir");
 	
 	Log.info("Starting up browser and opening the web Url");
 	
