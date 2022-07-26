@@ -5,6 +5,7 @@ package alphaTests;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import alphaPages.BaseClass;
@@ -19,7 +20,7 @@ import alphaUtilityClasses.TestData;
  * @author delphine.muoka
  *
  */
-
+@Listeners(ListenersTestNG.class)
 public class ChangePasswordTest extends BaseClass {
      
 	UpdateProfilePage updateprofilePage;

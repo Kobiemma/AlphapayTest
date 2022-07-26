@@ -5,6 +5,7 @@ package alphaTests;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import alphaPages.BaseClass;
@@ -18,7 +19,7 @@ import alphaUtilityClasses.TestData;
  * @author delphine.muoka
  *
  */
-
+@Listeners(ListenersTestNG.class)
 
 public class UpdateProfileTest extends BaseClass{
 
@@ -36,7 +37,7 @@ public class UpdateProfileTest extends BaseClass{
 
 	}
 
-	@Test
+	@Test(priority = 1)
 	public void ValidateinvalidUpdateProfile1() {
 
 
@@ -45,7 +46,7 @@ public class UpdateProfileTest extends BaseClass{
 
 
 	}
-	@Test
+	@Test(priority = 2)
 	public void ValidateinvalidUpdateProfile2() {
 
 
@@ -54,7 +55,7 @@ public class UpdateProfileTest extends BaseClass{
 
 
 	}
-	@Test
+	@Test(priority = 3)
 	public void ValidateinvalidUpdateProfile3() {
 
 
@@ -65,7 +66,7 @@ public class UpdateProfileTest extends BaseClass{
 	}
 
 
-	@Test
+	@Test(priority = 4)
 	public void ValidateUpdateProfile() {
 
 		int irow = 1;
@@ -73,8 +74,10 @@ public class UpdateProfileTest extends BaseClass{
 			Log.info("Test Conditions -----------"+TestData.getCellData(irow, 2, TestConstant.Sheet5));
 			updateprofilepage.Updateprofile(TestData.getCellData(irow, 0, TestConstant.Sheet5), TestData.getCellData(irow, 1, TestConstant.Sheet5));
 
-			Thread.sleep(3000);
-
+			Thread.sleep(2000);
+			String expectedMessage = "Update Successful";
+			String actualMessage = updateprofilepage.MessageDisplayed();
+			Assert.assertEquals(actualMessage, expectedMessage);
 
 		} catch (Exception e) {
 
@@ -82,11 +85,6 @@ public class UpdateProfileTest extends BaseClass{
 			String Exmessage = e.toString();		
 			Log.error(Exmessage);
 		}
-
-
-		String expectedMessage = "Update Successful";
-		String actualMessage = updateprofilepage.MessageDisplayed();
-		Assert.assertEquals(actualMessage, expectedMessage);
 
 	}
 	// Reuseable Method
@@ -100,7 +98,7 @@ public class UpdateProfileTest extends BaseClass{
 			updateprofilepage.Updateprofile(TestData.getCellData(irow, 0, TestConstant.Sheet6), TestData.getCellData(irow, 1, TestConstant.Sheet6));
 
 
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 			String expectedMessage = "Invalid Request Data";
 			String actualMessage = updateprofilepage.MessageDisplayed();
 			Assert.assertEquals(actualMessage, expectedMessage);

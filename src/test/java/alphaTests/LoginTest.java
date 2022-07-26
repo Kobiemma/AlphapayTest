@@ -3,9 +3,12 @@
  */
 package alphaTests;
 
-import java.util.concurrent.TimeUnit;
 
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import alphaPages.BaseClass;
@@ -17,7 +20,7 @@ import alphaUtilityClasses.TestData;
  * @author delphine.muoka
  *
  */
-
+@Listeners(ListenersTestNG.class)
 
 public class LoginTest extends BaseClass{
 
@@ -75,7 +78,8 @@ public class LoginTest extends BaseClass{
 			
 			loginpage.UserLogin(TestData.getCellData(irow, 0, TestConstant.Sheet1), TestData.getCellData(irow, 1, TestConstant.Sheet1));
 		    
-			Thread.sleep(3000);
+			WebDriverWait wait=new WebDriverWait(driver, 10);
+			wait.until(ExpectedConditions.urlToBe("https://alphapay.netlify.app/dashboard/overview"));
 			String expectedUrl = "https://alphapay.netlify.app/dashboard/overview";
 			String actualUrl = driver.getCurrentUrl();
 			Assert.assertEquals(actualUrl, expectedUrl);
@@ -100,13 +104,8 @@ public class LoginTest extends BaseClass{
 		 loginpage.UserLogin(TestData.getCellData(irow, 0, TestConstant.Sheet2), TestData.getCellData(irow, 1, TestConstant.Sheet2));
 		
 		
-		
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
-		Thread.sleep(2000);
-		String expectedUrl = "https://alphapay.netlify.app/auth/login";
-		String actualUrl = driver.getCurrentUrl();
-		Assert.assertEquals(actualUrl, expectedUrl);
+		WebDriverWait wait=new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.urlToBe("https://alphapay.netlify.app/auth/login"));
 		
 	} catch (Exception e) {
 		
@@ -114,6 +113,9 @@ public class LoginTest extends BaseClass{
 		Log.error(Exmessage);
 
 		}
+	String expectedUrl = "https://alphapay.netlify.app/auth/login";
+	String actualUrl = driver.getCurrentUrl();
+	Assert.assertEquals(actualUrl, expectedUrl);
 	}
 		
 	

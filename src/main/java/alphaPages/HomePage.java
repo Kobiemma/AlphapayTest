@@ -35,8 +35,6 @@ public class HomePage extends BaseClass{
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click()", ProfileLink);
 		
-		//ProfileLink.click();
-		
 		return new UpdateProfilePage();
 		
 	}

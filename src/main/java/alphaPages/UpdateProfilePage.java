@@ -53,15 +53,13 @@ public class UpdateProfilePage extends BaseClass {
 		
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click()", UpdateBtn);
-		
-		
-		
+	
 		
 	}
 	
 	public String MessageDisplayed() {
 		
-		WebDriverWait wait=new WebDriverWait(driver, 30);
+		WebDriverWait wait=new WebDriverWait(driver, 10);
 		
 		UpdateProfileMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//body[1]/div[1]/div[1]/div[1]/div[1]/div[2]")));
 		

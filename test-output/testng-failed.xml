@@ -3,14 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="alphaTests.SignUpTest">
+      <class name="alphaTests.LoginTest">
         <methods>
-          <include name="ValidateValidInputsWithValidDataFormat"/>
+          <include name="ValidateWrongUsernameAndValidPassword"/>
           <include name="Setup"/>
-          <include name="navigateToRegisterPage"/>
+          <include name="ValidateEmptyUsernameAndWrongPassword"/>
+          <include name="ValidateValidUsernameAndWrongPassword"/>
+          <include name="ValidatewrongUsernameAndEmptyPassword"/>
+          <include name="ValidateEmptyUsernameAndEmptyPassword"/>
+          <include name="ValidateWrongUsernameAndWrongPassword"/>
           <include name="Teardown"/>
         </methods>
-      </class> <!-- alphaTests.SignUpTest -->
+      </class> <!-- alphaTests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -67,10 +67,10 @@ public class ChangePasswordPage extends BaseClass {
 	public String MessageDisplay() {
 
 		WebDriverWait wait=new WebDriverWait(driver, 10);
-
+		
 		ChangePasswordMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//body[1]/div[1]/div[1]/div[1]/div[1]/div[2]")));		
 
-
+		
 		String msg = ChangePasswordMessage.getText();
 
 

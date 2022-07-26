@@ -1,11 +1,13 @@
 /**
  * 
  */
-package alphaUtilityClasses;
+package alphaTests;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+
+import alphaUtilityClasses.Log;
 
 /**
  * @author delphine.muoka

@@ -2,44 +2,44 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-21T12:55:53 WAT" name="Default suite" finished-at="2022-07-21T12:56:18 WAT" duration-ms="24263">
+  <suite started-at="2022-07-26T15:00:13 WAT" name="Default suite" finished-at="2022-07-26T15:00:28 WAT" duration-ms="14215">
     <groups>
     </groups>
-    <test started-at="2022-07-21T12:55:53 WAT" name="Default test" finished-at="2022-07-21T12:56:18 WAT" duration-ms="24263">
+    <test started-at="2022-07-26T15:00:13 WAT" name="Default test" finished-at="2022-07-26T15:00:28 WAT" duration-ms="14215">
       <class name="alphaTests.LoginTest">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:alphaTests.LoginTest@f5acb9d]" started-at="2022-07-21T12:55:53 WAT" name="Setup" finished-at="2022-07-21T12:55:59 WAT" duration-ms="6083" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:alphaTests.LoginTest@4c51bb7]" started-at="2022-07-26T15:00:13 WAT" name="Setup" finished-at="2022-07-26T15:00:19 WAT" duration-ms="6028" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="ValidateWrongUsernameAndWrongPassword()[pri:1, instance:alphaTests.LoginTest@f5acb9d]" started-at="2022-07-21T12:55:59 WAT" name="ValidateWrongUsernameAndWrongPassword" finished-at="2022-07-21T12:56:03 WAT" duration-ms="3968" status="PASS">
+        <test-method signature="ValidateWrongUsernameAndWrongPassword()[pri:1, instance:alphaTests.LoginTest@4c51bb7]" started-at="2022-07-26T15:00:19 WAT" name="ValidateWrongUsernameAndWrongPassword" finished-at="2022-07-26T15:00:21 WAT" duration-ms="1551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateWrongUsernameAndWrongPassword -->
-        <test-method signature="ValidateWrongUsernameAndValidPassword()[pri:2, instance:alphaTests.LoginTest@f5acb9d]" started-at="2022-07-21T12:56:03 WAT" name="ValidateWrongUsernameAndValidPassword" finished-at="2022-07-21T12:56:06 WAT" duration-ms="2526" status="PASS">
+        <test-method signature="ValidateWrongUsernameAndValidPassword()[pri:2, instance:alphaTests.LoginTest@4c51bb7]" started-at="2022-07-26T15:00:21 WAT" name="ValidateWrongUsernameAndValidPassword" finished-at="2022-07-26T15:00:23 WAT" duration-ms="1595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateWrongUsernameAndValidPassword -->
-        <test-method signature="ValidateValidUsernameAndWrongPassword()[pri:3, instance:alphaTests.LoginTest@f5acb9d]" started-at="2022-07-21T12:56:06 WAT" name="ValidateValidUsernameAndWrongPassword" finished-at="2022-07-21T12:56:08 WAT" duration-ms="2573" status="PASS">
+        <test-method signature="ValidateValidUsernameAndWrongPassword()[pri:3, instance:alphaTests.LoginTest@4c51bb7]" started-at="2022-07-26T15:00:23 WAT" name="ValidateValidUsernameAndWrongPassword" finished-at="2022-07-26T15:00:23 WAT" duration-ms="793" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateValidUsernameAndWrongPassword -->
-        <test-method signature="ValidatewrongUsernameAndEmptyPassword()[pri:4, instance:alphaTests.LoginTest@f5acb9d]" started-at="2022-07-21T12:56:08 WAT" name="ValidatewrongUsernameAndEmptyPassword" finished-at="2022-07-21T12:56:11 WAT" duration-ms="2413" status="PASS">
+        <test-method signature="ValidatewrongUsernameAndEmptyPassword()[pri:4, instance:alphaTests.LoginTest@4c51bb7]" started-at="2022-07-26T15:00:23 WAT" name="ValidatewrongUsernameAndEmptyPassword" finished-at="2022-07-26T15:00:24 WAT" duration-ms="759" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidatewrongUsernameAndEmptyPassword -->
-        <test-method signature="ValidateEmptyUsernameAndWrongPassword()[pri:5, instance:alphaTests.LoginTest@f5acb9d]" started-at="2022-07-21T12:56:11 WAT" name="ValidateEmptyUsernameAndWrongPassword" finished-at="2022-07-21T12:56:13 WAT" duration-ms="2381" status="PASS">
+        <test-method signature="ValidateEmptyUsernameAndWrongPassword()[pri:5, instance:alphaTests.LoginTest@4c51bb7]" started-at="2022-07-26T15:00:24 WAT" name="ValidateEmptyUsernameAndWrongPassword" finished-at="2022-07-26T15:00:25 WAT" duration-ms="435" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateEmptyUsernameAndWrongPassword -->
-        <test-method signature="ValidateEmptyUsernameAndEmptyPassword()[pri:6, instance:alphaTests.LoginTest@f5acb9d]" started-at="2022-07-21T12:56:13 WAT" name="ValidateEmptyUsernameAndEmptyPassword" finished-at="2022-07-21T12:56:13 WAT" duration-ms="181" status="PASS">
+        <test-method signature="ValidateEmptyUsernameAndEmptyPassword()[pri:6, instance:alphaTests.LoginTest@4c51bb7]" started-at="2022-07-26T15:00:25 WAT" name="ValidateEmptyUsernameAndEmptyPassword" finished-at="2022-07-26T15:00:25 WAT" duration-ms="232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateEmptyUsernameAndEmptyPassword -->
-        <test-method signature="validateValidCredentials()[pri:7, instance:alphaTests.LoginTest@f5acb9d]" started-at="2022-07-21T12:56:13 WAT" name="validateValidCredentials" finished-at="2022-07-21T12:56:17 WAT" duration-ms="3397" status="PASS">
+        <test-method signature="validateValidCredentials()[pri:7, instance:alphaTests.LoginTest@4c51bb7]" started-at="2022-07-26T15:00:25 WAT" name="validateValidCredentials" finished-at="2022-07-26T15:00:26 WAT" duration-ms="1468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateValidCredentials -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:alphaTests.LoginTest@f5acb9d]" started-at="2022-07-21T12:56:17 WAT" name="Teardown" finished-at="2022-07-21T12:56:18 WAT" duration-ms="696" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:alphaTests.LoginTest@4c51bb7]" started-at="2022-07-26T15:00:26 WAT" name="Teardown" finished-at="2022-07-26T15:00:28 WAT" duration-ms="1269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->

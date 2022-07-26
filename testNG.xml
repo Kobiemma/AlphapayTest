@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <suite parallel="false" name="AlphaPay Suite">
-
-<listeners>
-		<listener class-name="alphaUtilityClasses.ListenersTestNG" />
-	</listeners>
    		
 		<test name="Signup Test">
 		<classes>
@@ -33,5 +29,4 @@
 		</classes>    
         </test>	
   
-
 </suite> <!-- Suite -->

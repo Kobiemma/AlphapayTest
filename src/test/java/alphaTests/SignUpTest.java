@@ -5,8 +5,11 @@ package alphaTests;
 
 
 
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import alphaPages.BaseClass;
@@ -21,7 +24,7 @@ import alphaUtilityClasses.TestData;
  * @author delphine.muoka
  * each @Test represents test cases and priority is the order they should run
  */
-
+@Listeners(ListenersTestNG.class)
 
 public class SignUpTest extends BaseClass {
 
@@ -32,6 +35,7 @@ public class SignUpTest extends BaseClass {
 	public void navigateToRegisterPage() {
 
 		signuppage = loginpage.navigateToSignup();
+		
 	}
 
 
@@ -131,6 +135,7 @@ public class SignUpTest extends BaseClass {
 
 		resuableMethodForInvalidInputs(17);
 
+		
 		String currentUrl = driver.getCurrentUrl();
 		String ExpectedUrl = "https://alphapay.netlify.app/auth/signup";
 		Assert.assertEquals(currentUrl,ExpectedUrl );
@@ -157,12 +162,16 @@ public class SignUpTest extends BaseClass {
 					TestData.getCellData(1, 2, TestConstant.Sheet3), TestData.getCellData(1, 3, TestConstant.Sheet3), 
 					TestData.getCellData(1, 4, TestConstant.Sheet3), TestData.getCellData(1, 5, TestConstant.Sheet3));
 			
-			Thread.sleep(2000);
+			WebDriverWait wait=new WebDriverWait(driver, 10);
+			wait.until(ExpectedConditions.urlToBe("https://alphapay.netlify.app/dashboard/overview"));
+			
 		} catch (Exception e) {
 			String Exmessage = e.toString();		
 			Log.error(Exmessage);
 		}			
 
+		
+		
 		String currentUrl = driver.getCurrentUrl();
 		String ExpectedUrl = "https://alphapay.netlify.app/dashboard/overview";
 		Assert.assertEquals(currentUrl,ExpectedUrl );
@@ -183,15 +192,18 @@ public class SignUpTest extends BaseClass {
 					TestData.getCellData(irow, 2, TestConstant.Sheet4), TestData.getCellData(irow, 3, TestConstant.Sheet4), 
 					TestData.getCellData(irow, 4, TestConstant.Sheet4), TestData.getCellData(irow, 5, TestConstant.Sheet4));
 
-			Thread.sleep(2000);
-			String currentUrl = driver.getCurrentUrl();
-			String ExpectedUrl = "https://alphapay.netlify.app/auth/signup";
-			Assert.assertEquals(currentUrl,ExpectedUrl );
-
+			WebDriverWait wait=new WebDriverWait(driver, 5);
+			wait.until(ExpectedConditions.urlToBe("https://alphapay.netlify.app/auth/signup"));
+			
 		} catch (Exception e) {
 			String Exmessage = e.toString();		
 			Log.error(Exmessage);
 		}		
+		
+		String currentUrl = driver.getCurrentUrl();
+		String ExpectedUrl = "https://alphapay.netlify.app/auth/signup";
+		Assert.assertEquals(currentUrl,ExpectedUrl );
+
 	}
 
 

@@ -4,6 +4,7 @@
 package alphaTests;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import alphaPages.BaseClass;
@@ -18,7 +19,7 @@ import alphaUtilityClasses.TestData;
  *
  */
 
-
+@Listeners(ListenersTestNG.class)
 public class HomePageTest extends BaseClass {
 	
 
@@ -35,7 +36,6 @@ public class HomePageTest extends BaseClass {
 			
 			homepage = loginpage.UserLogin(TestData.getCellData(irow, 0, TestConstant.Sheet1), TestData.getCellData(irow, 1, TestConstant.Sheet1));
 			
-			
 			homepage.ClickprofileLink();
 			
 		
@@ -48,8 +48,6 @@ public class HomePageTest extends BaseClass {
 		
 		
 		}
-		
-		Thread.sleep(3000);
 		
 		String expectedUrl = "https://alphapay.netlify.app/dashboard/settings/profile";
 		String actualUrl = driver.getCurrentUrl();

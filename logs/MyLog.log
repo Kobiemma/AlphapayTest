@@ -1,0 +1,45 @@
+[INFO ] 2022-07-26 15:00:13.892 [main] Log - X
+[INFO ] 2022-07-26 15:00:13.900 [main] Log - $$$$$$$$$$$$$$$$$$$$$                 onStart method started       $$$$$$$$$$$$$$$$$$$$$$$$$
+[INFO ] 2022-07-26 15:00:13.900 [main] Log - ****************************************************************************************
+[INFO ] 2022-07-26 15:00:13.919 [main] Log - Starting up browser and opening the web Url
+[INFO ] 2022-07-26 15:00:19.979 [main] Log - X
+[INFO ] 2022-07-26 15:00:19.979 [main] Log - $$$$$$$$$$$$$$$$$$$$$                 New Test StartedValidateWrongUsernameAndWrongPassword       $$$$$$$$$$$$$$$$$$$$$$$$$
+[INFO ] 2022-07-26 15:00:19.979 [main] Log - ****************************************************************************************
+[INFO ] 2022-07-26 15:00:20.938 [main] Log - Test Conditions -----------wrong username and wrong password
+[INFO ] 2022-07-26 15:00:21.532 [main] Log - onTestSuccess MethodValidateWrongUsernameAndWrongPassword
+[INFO ] 2022-07-26 15:00:21.536 [main] Log - X
+[INFO ] 2022-07-26 15:00:21.537 [main] Log - $$$$$$$$$$$$$$$$$$$$$                 New Test StartedValidateWrongUsernameAndValidPassword       $$$$$$$$$$$$$$$$$$$$$$$$$
+[INFO ] 2022-07-26 15:00:21.537 [main] Log - ****************************************************************************************
+[INFO ] 2022-07-26 15:00:21.653 [main] Log - Test Conditions -----------wrong username and valid password
+[INFO ] 2022-07-26 15:00:23.133 [main] Log - onTestSuccess MethodValidateWrongUsernameAndValidPassword
+[INFO ] 2022-07-26 15:00:23.137 [main] Log - X
+[INFO ] 2022-07-26 15:00:23.137 [main] Log - $$$$$$$$$$$$$$$$$$$$$                 New Test StartedValidateValidUsernameAndWrongPassword       $$$$$$$$$$$$$$$$$$$$$$$$$
+[INFO ] 2022-07-26 15:00:23.137 [main] Log - ****************************************************************************************
+[INFO ] 2022-07-26 15:00:23.222 [main] Log - Test Conditions -----------valid username and wrong password
+[INFO ] 2022-07-26 15:00:23.930 [main] Log - onTestSuccess MethodValidateValidUsernameAndWrongPassword
+[INFO ] 2022-07-26 15:00:23.931 [main] Log - X
+[INFO ] 2022-07-26 15:00:23.931 [main] Log - $$$$$$$$$$$$$$$$$$$$$                 New Test StartedValidatewrongUsernameAndEmptyPassword       $$$$$$$$$$$$$$$$$$$$$$$$$
+[INFO ] 2022-07-26 15:00:23.931 [main] Log - ****************************************************************************************
+[INFO ] 2022-07-26 15:00:24.011 [main] Log - Test Conditions -----------valid username and empty password
+[INFO ] 2022-07-26 15:00:24.691 [main] Log - onTestSuccess MethodValidatewrongUsernameAndEmptyPassword
+[INFO ] 2022-07-26 15:00:24.692 [main] Log - X
+[INFO ] 2022-07-26 15:00:24.692 [main] Log - $$$$$$$$$$$$$$$$$$$$$                 New Test StartedValidateEmptyUsernameAndWrongPassword       $$$$$$$$$$$$$$$$$$$$$$$$$
+[INFO ] 2022-07-26 15:00:24.692 [main] Log - ****************************************************************************************
+[INFO ] 2022-07-26 15:00:24.752 [main] Log - Test Conditions -----------empty username and valid password
+[INFO ] 2022-07-26 15:00:25.128 [main] Log - onTestSuccess MethodValidateEmptyUsernameAndWrongPassword
+[INFO ] 2022-07-26 15:00:25.128 [main] Log - X
+[INFO ] 2022-07-26 15:00:25.129 [main] Log - $$$$$$$$$$$$$$$$$$$$$                 New Test StartedValidateEmptyUsernameAndEmptyPassword       $$$$$$$$$$$$$$$$$$$$$$$$$
+[INFO ] 2022-07-26 15:00:25.129 [main] Log - ****************************************************************************************
+[INFO ] 2022-07-26 15:00:25.179 [main] Log - Test Conditions -----------empty username and empty password
+[ERROR] 2022-07-26 15:00:25.225 [main] Log - TestData Class | Method getCellData | Exception descCannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because "alphaUtilityClasses.TestData.Cell" is null
+[ERROR] 2022-07-26 15:00:25.273 [main] Log - TestData Class | Method getCellData | Exception descCannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because "alphaUtilityClasses.TestData.Cell" is null
+[ERROR] 2022-07-26 15:00:25.353 [main] Log - java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+[INFO ] 2022-07-26 15:00:25.361 [main] Log - onTestSuccess MethodValidateEmptyUsernameAndEmptyPassword
+[INFO ] 2022-07-26 15:00:25.362 [main] Log - X
+[INFO ] 2022-07-26 15:00:25.362 [main] Log - $$$$$$$$$$$$$$$$$$$$$                 New Test StartedvalidateValidCredentials       $$$$$$$$$$$$$$$$$$$$$$$$$
+[INFO ] 2022-07-26 15:00:25.363 [main] Log - ****************************************************************************************
+[INFO ] 2022-07-26 15:00:25.416 [main] Log - Test Conditions -----------valid username and valid password
+[INFO ] 2022-07-26 15:00:26.832 [main] Log - onTestSuccess MethodvalidateValidCredentials
+[INFO ] 2022-07-26 15:00:28.142 [main] Log - X
+[INFO ] 2022-07-26 15:00:28.143 [main] Log - $$$$$$$$$$$$$$$$$$$$$                 onFinish method started       $$$$$$$$$$$$$$$$$$$$$$$$$
+[INFO ] 2022-07-26 15:00:28.143 [main] Log - ****************************************************************************************
